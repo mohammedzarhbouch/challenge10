@@ -26,7 +26,7 @@ if ($statement = $con->prepare('SELECT id, password FROM users WHERE name = ?'))
 			$_SESSION['loggedin'] = TRUE;
 			$_SESSION['name'] = $_POST['username'];
 			$_SESSION['id'] = $id;
-			header('Location: home.php');
+			header('Location: ../front-end/home_profiel/index.html');
 		} else {
 			var_dump('Incorrect password'); // Debugging statement
 			echo 'Incorrect username and/or password!';
@@ -37,5 +37,7 @@ if ($statement = $con->prepare('SELECT id, password FROM users WHERE name = ?'))
 	}
 
 	$statement->close();
+
+	
 }
 ?>

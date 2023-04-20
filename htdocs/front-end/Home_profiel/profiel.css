@@ -69,15 +69,19 @@ button{
     left: 106px;
     top: 200px;
     border-radius: 30px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
-text{
+.profiel-text{
     font-family: 'Average Mono','Courier New','Courier','monospace';
     font-size: 250%;
     background: linear-gradient(to right, #000000bf, #0a2707bf);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* color: white; */
+    margin-bottom: 20px;
 }
+
 #foto{
     width: 20%;
     margin-left: 40%;
