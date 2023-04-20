@@ -38,7 +38,7 @@ label{
 }
 input{
 	width: 60%;
-	height: 20px;
+	/* height: 20px; */
 	background: #e0dede;
 	justify-content: center;
 	display: flex;
@@ -89,3 +89,4 @@ button:hover{
 #chk:checked ~ .signup label{
 	transform: scale(.6);
 }
+

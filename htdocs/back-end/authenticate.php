@@ -9,7 +9,7 @@ if ( !isset($_POST['username'], $_POST['password']) ) {
 }
 
 
-if ($statement = $con->prepare('SELECT id, password FROM users WHERE username = ?')) {
+if ($statement = $con->prepare('SELECT id, password FROM users WHERE name = ?')) {
 	
 	$statement->bind_param('s', $_POST['username']);
 	$statement->execute();
@@ -28,7 +28,7 @@ if ($statement = $con->prepare('SELECT id, password FROM users WHERE username = 
 			$_SESSION['id'] = $id;
 			header('Location: home.php');
 		} else {
-			
+			var_dump('Incorrect password'); // Debugging statement
 			echo 'Incorrect username and/or password!';
 		}
 	} else {
@@ -36,6 +36,6 @@ if ($statement = $con->prepare('SELECT id, password FROM users WHERE username = 
 		echo 'Incorrect username and/or password!';
 	}
 
-	$stmt->close();
+	$statement->close();
 }
 ?>
