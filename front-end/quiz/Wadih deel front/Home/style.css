@@ -6,7 +6,7 @@
 .banner{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(10, 39, 7, 0.75)),url(wereldachtergrond.png);
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(10, 39, 7, 0.75)),url("Foto's/wereldachtergrond.png");
     background-size: cover;
     background-position: center;
 }
@@ -19,7 +19,13 @@
     justify-content: space-between;
 }
 .quiz{
+    margin-top: 10px;
     width: 110px;
+    cursor: pointer;
+    z-index: 1;
+}
+.pijl{
+    width: 80px;
     cursor: pointer;
     z-index: 1;
 }
