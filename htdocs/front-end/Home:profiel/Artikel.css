@@ -70,16 +70,26 @@ button{
     top: 200px;
     border-radius: 30px;
 }
+.box1:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(8, 244, 36, 0.6);
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
 text{
     font-family: 'Average Mono','Courier New','Courier','monospace';
     font-size: 200%;
     background: linear-gradient(to right, #000000bf, #0a2707bf);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* color: white; */
 }
 h2{
     background: linear-gradient(to right, #000000bf, #0a2707bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#video{
+    background: blue;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
