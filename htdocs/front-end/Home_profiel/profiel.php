@@ -19,8 +19,8 @@ session_start();
             <img src="" class="">
             <ul>
                 <li><a href="#"><a href="index.html">Home</a></li>
-                <li><a href="#"><a href="profiel.html">Profiel</a></li>
-                <li><a href="#"><a href="../login/login.html">Log uit</a></li>
+                <li><a href="#"><a href="profiel.php">Profiel</a></li>
+                <li><a href="#"><a href="loguit.php">Log uit</a></li>
             </ul>
         </div>
         <div class="content">
