@@ -62,7 +62,8 @@ session_start();
                 echo "Wachtwoord: $password<br>";
               
             ?>
-  <button id=wachtwoordVeranderen>Wachtwoord veranderen</button>
+    <a href="reset-password.php">Wachtwoord veranderen</a>
+
 </div>
 
             </div>
