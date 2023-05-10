@@ -15,8 +15,8 @@
     margin: auto;
     padding: 35px 0;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: right;
+    justify-content: right;
 }
 .navbar ul li{
     list-style: none;
@@ -58,7 +58,6 @@ button{
     border: 2px solid #009688;
     background: transparent;
     color: #fff;
-    cursor: pointer;
     position: relative;
 }
 .box1{
@@ -82,9 +81,35 @@ button{
     margin-bottom: 20px;
 }
 
-#foto{
-    width: 20%;
-    margin-left: 40%;
-    z-index: 2;
+#wachtwoordVeranderen{
+    cursor: pointer;
+}
+
+img{
     position: absolute;
+    height: 200px;
+    margin-bottom: 200px;
+    z-index: 2;
+    /* padding: 10px; */
+    object-fit: fill;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.uploadButton{
+    background-color: rgba(50, 102, 50, 0.377);
+    color: white;
+    border-radius: 40px;
+    margin: 5px;
+    border:2px solid rgb(255, 253, 253);
+    transition: .2s ease-in-out;
+    height: 20px;
+    padding: 2px;
+    cursor: pointer;
+}
+.uploadButton:hover{
+    background-color: rgb(228, 221, 221);
+    color: black;
+    border:2px solid rgb(255, 253, 253);
+    height: 20px;
 }

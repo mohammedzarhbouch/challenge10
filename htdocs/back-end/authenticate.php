@@ -38,6 +38,7 @@ if ($statement = $con->prepare('SELECT id, password FROM users WHERE name = ?'))
 
 	$statement->close();
 
+	$profiel_pic = $row['profiel_pic'];
 	
 }
 ?>

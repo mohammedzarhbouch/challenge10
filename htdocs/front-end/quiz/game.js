@@ -74,7 +74,7 @@ let questions = [
         choice3: "Het stelen van uw identiteitskaart of paspoort",
         choice4: "Het kopiëren van uw gezichtskenmerken om toegang te krijgen tot beveiligde gebieden",
         answer: 2,
-    },
+    }, 
     {
         question: "Wat is een sterk wachtwoord?",
         choice1: "MacbooksNeedAGoodPassword!",
@@ -151,6 +151,23 @@ choices.forEach(choice => {
         }, 1000)
     })
 })
+
+// Retrieve score from local storage
+var scoreEnd = localStorage.getItem("score");
+
+// Retrieve user_id and quiz_id (assuming you have them stored somewhere)
+var user_id = 1;
+var quiz_id = 1;
+
+// Send score to server via AJAX
+$.ajax({
+  type: "POST",
+  url: "insert_score.php",
+  data: {score: score, user_id: user_id, quiz_id: quiz_id},
+  success: function(response){
+    console.log(response);
+  }
+});
 
 incrementScore = num => {
     score +=num
