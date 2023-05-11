@@ -107,7 +107,7 @@ img{
     padding: 2px;
     cursor: pointer;
 }
-.uploadButton:hover{
+.uploadButton1:hover{
     background-color: rgb(228, 221, 221);
     color: black;
     border:2px solid rgb(255, 253, 253);

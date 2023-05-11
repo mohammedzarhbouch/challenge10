@@ -8,6 +8,9 @@
     <link rel="stylesheet"href="style.css">
 </head>
 <body>
+    <div class="container">
+        <div class="box">
+            <video src="videocode.webm" type="video/mp4" loop class="clip" muted></video>
     <div class="banner">
         <div class="navbar">
             <img src="" class="">
@@ -26,5 +29,18 @@
             </div>
         </div>
     </div>
+        </div>
+    </div>
+    <script>
+        const clip = document.querySelectorAll('.clip');
+        for (let i = 0; i<clip.length; i++){
+            clip[i].addEventListener('mouseenter',function(e){
+                clip[i].play()
+            })
+            clip[i].addEventListener('mouseout',function(e){
+                clip[i].pause()
+            })
+        }
+    </script>
 </body>
 </html>
